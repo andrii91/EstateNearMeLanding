@@ -9,6 +9,7 @@
   right: 0;
   width: 100%;
   padding: 12px 0;
+  z-index: 40;
 
   .container {
     max-width: 1492px;
@@ -147,6 +148,278 @@
       color: var(--alteco-dark);
     }
   }
+}
+
+.modal {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+
+  .close {
+    width: 32px;
+    height: 32px;
+    color: #000;
+    transition: .3s;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &-dialog {
+    background: url('../images/modal-bg.webp') no-repeat center;
+    background-size: cover;
+    max-width: 1200px;
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+    border-radius: 16px;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.get-price-form {
+
+  &-item {
+    width: 100%;
+  }
+
+  h2 {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 48px */
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+    margin-bottom: 30px;
+  }
+
+  &-inputs {
+    max-width: 588px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.70);
+    padding: 40px;
+    margin-left: auto;
+
+    .row {
+      margin: 0 -8px;
+    }
+
+    .col-lg-6, .col-12 {
+      padding: 0 8px;
+    }
+  }
+
+  .inputs-group {
+    display: inline-flex;
+    gap: 10px 40px;
+    text-align: left;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      .custom-radio {
+        width: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-button {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: none;
+    border: 0;
+    margin-top: 32px;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .custom-input, .custom-select {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #FFF;
+  }
+
+  .custom-select {
+    border-right: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_168_3821' fill='white'%3E%3Cpath d='M5.65723 0.5L11.3141 6.15686L5.65723 11.8137L0.000367887 6.15686L5.65723 0.5Z'/%3E%3C/mask%3E%3Cpath d='M5.65723 11.8137L4.24301 13.2279L5.65723 14.6421L7.07144 13.2279L5.65723 11.8137ZM9.89987 4.74265L4.24301 10.3995L7.07144 13.2279L12.7283 7.57107L9.89987 4.74265ZM7.07144 10.3995L1.41458 4.74265L-1.41385 7.57107L4.24301 13.2279L7.07144 10.3995Z' fill='white' fill-opacity='0.7' mask='url(%23path-1-inside-1_168_3821)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    option {
+      color: #000;
+    }
+  }
+}
+
+.custom {
+  &-radio {
+    padding: 10px 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-wrap: nowrap;
+  
+    input {
+      display: none;
+  
+      &:checked {
+        +span:after {
+          opacity: 1;
+        }
+      }
+    }
+  
+    span {
+      padding-left: 28px;
+      position: relative;
+  
+      &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      &:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        opacity: 0;
+        transform: 0.3s;
+      }
+    }
+  }
+
+  &-input {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px 22px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &-select {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px 22px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_168_3415' fill='white'%3E%3Cpath d='M5.65674 0.5L11.3136 6.15686L5.65674 11.8137L-0.000120394 6.15686L5.65674 0.5Z'/%3E%3C/mask%3E%3Cpath d='M5.65674 11.8137L4.24252 13.2279L5.65674 14.6421L7.07095 13.2279L5.65674 11.8137ZM9.89938 4.74265L4.24252 10.3995L7.07095 13.2279L12.7278 7.57107L9.89938 4.74265ZM7.07095 10.3995L1.41409 4.74265L-1.41433 7.57107L4.24252 13.2279L7.07095 10.3995Z' fill='black' fill-opacity='0.5' mask='url(%23path-1-inside-1_168_3415)'/%3E%3C/svg%3E%0A");
+  }
+}
+
+.input-phone {
+  display: flex;
+}
+
+.tab-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+} 
+
+.text-center {
+  text-align: center;
 }
 
 body {
