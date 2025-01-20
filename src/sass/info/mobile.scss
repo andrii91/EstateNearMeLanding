@@ -1,2 +1,78 @@
 & {
+  .header {
+    padding-top: 88px;
+    padding-bottom: 62px;
+    min-height: auto;
+
+    &-logo {
+      display: none;
+    }
+    
+    &-item {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn-regular {
+    padding: 16px;
+    max-width: 230px;
+    width: 100%;
+  }
+
+  .modal#get-price .modal-dialog {
+    padding: 50px 16px 16px;
+    text-align: center;
+    .get-price-form {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      &-inputs {
+        padding: 32px 24px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .xs-none {
+    display: none;
+  }
+
+  .call-me {
+    width: 50px;
+    height: 50px;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-item {
+      h2 {
+        font-size: 24px;
+    
+      }
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
 }

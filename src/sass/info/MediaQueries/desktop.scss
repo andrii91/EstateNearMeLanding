@@ -3,7 +3,9 @@
 @media #{$desktop} {
     @import '../desktop';
     & {
-	  
+	  .xl-none {
+        display: none;
+      }
     }
 }
 

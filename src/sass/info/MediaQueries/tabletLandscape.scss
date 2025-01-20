@@ -2,4 +2,8 @@
 
 @media #{$tabletLandscape} {
   @import '../desktop';
+
+  .xl-none {
+    display: none;
+  }
 }
