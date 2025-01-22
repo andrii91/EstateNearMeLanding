@@ -71,6 +71,65 @@
   
       p {
         font-size: 14px;
+      } 
+
+    }
+  }
+
+  .btn-group {
+    gap: 16px;
+  }
+
+  .apartment {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    &-summ {
+      text-align: center;
+
+      h4 {
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 8px;
+        justify-content: center;
+      }
+    }
+
+    &-hr {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .gallery {
+    h3 {
+      font-size: 16px;
+    }
+    .gallery-count {
+      font-size: 14px;
+    }
+    &-slider {
+      margin-top: 24px;
+      &-mobile {
+        display: block;
+        padding-bottom: 64px;
+  
+        .slick-arrow {
+          transform: none;
+          top: auto;
+          bottom: 0;
+          height: 40px;
+          width: 40px;
+        }
+      }
+  
+      &-desktop {
+        display: none;
       }
     }
   }

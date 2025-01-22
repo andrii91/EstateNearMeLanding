@@ -48,10 +48,11 @@ gulp.task('js', async function() {
 gulp.task('js_v', async function() {
     gulp.src([
             'src/js/vendor/jquery-3.6.3.min.js',
-            'src/js/vendor/inputmask.js',
+            'src/js/vendor/fancybox.min.js',
+            'src/js/vendor/slick.min.js',
         ])
         .pipe(concat('vendor.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
