@@ -114,6 +114,24 @@ $( document ).ready(function() {
 
   });
 
+  $('.get-info-form').on('submit', function (e) {
+    e.preventDefault();
+    var $form = $(this);
+    $form.find('.submit').addClass('inactive');
+    $form.find('.submit').prop('disabled', true);
+
+
+    setTimeout(function () {
+      alert('Success');
+      
+      $form.find('.submit').removeClass('inactive');
+      $form.find('.submit').prop('disabled', false);
+      $form[0].reset();
+      
+    }, 1000);
+
+  });
+
   function validateEmail(email) {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   
@@ -156,6 +174,23 @@ $( document ).ready(function() {
       $('.call-me-submit').attr('disabled', true)
     }
   })
+
+
+  const ofertaValue2 = $('#oferta_2');
+  if(ofertaValue2.is(':checked')) {
+    $('.get-info-form-btn').removeAttr('disabled')
+  }else{
+    $('.get-info-form-btn').attr('disabled', true)
+  }
+
+  ofertaValue2.change(function(){
+    if(ofertaValue2.is(':checked')) {
+      $('.get-info-form-btn').removeAttr('disabled')
+    }else{
+      $('.get-info-form-btn').attr('disabled', true)
+    }
+  })
+  
 
   // $('input[name="phone"]').inputmask("{1,15}");
 

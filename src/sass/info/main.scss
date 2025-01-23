@@ -1280,6 +1280,170 @@ h2 {
   cursor: pointer;
 }
 
+.object {
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .apartment-link {
+    margin-top: 40px;
+    @media screen and (max-width: 992px) {
+      margin-top: 24px;
+    }
+  }
+
+  .apartment-hr {
+    margin-bottom: 0;
+  }
+}
+
+.table {
+  width: 100%;
+
+  &-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th {
+    background: var(--alteco-blue);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; 
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 24px;
+    border-bottom: 1px solid #E8E8E8;
+    
+    @media screen and (max-width: 992px) {
+      padding: 16px;
+      font-size: 10.909px;
+    }
+  }
+
+  td {
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    padding: 24px;
+    border-bottom: 1px solid #E8E8E8;
+
+    @media screen and (max-width: 992px) {
+      padding: 16px;
+      font-size: 10.909px;
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      td {
+        background: var(--alteco-light);
+      }
+    }
+  }
+}
+
+.get-info {
+  background: url('../images/get-info-bg.webp') no-repeat center;
+  background-size: cover;
+
+  &-form {
+    background-color: var(--alteco-dark);
+    background-image: url(../images/noise.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+    @media screen and (max-width: 992px) {
+      padding: 16px;
+    }
+
+    h3 {
+      color: #FFF;
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 43.2px */
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #FFF;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+
+      .label {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+    }
+
+    .custom-select, .custom-input {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    &-btn {
+      border: 0;
+      padding: 19px 32px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      cursor: pointer;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      &[disabled] {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.input-phone {
+  .custom-select {
+    border-right: 0;
+  }
+}
+
 body {
   overflow-x: hidden;
   @import 'MediaQueries/main';
