@@ -50,6 +50,10 @@
     }
   }
 
+  .xs-block {
+    display: block;
+  }
+
   .xs-none {
     display: none;
   }
@@ -144,4 +148,112 @@
     max-width: 100%;
   }
 
+  .schedule {
+    &-row {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    &-col {
+      flex-direction: row;
+    }
+
+    &-head {
+      text-align: left;
+      width: 40%;
+      padding: 10px 20px;
+      font-size: 12px;
+      align-items: flex-start;
+      min-height: auto;
+      min-width: none;
+      flex-direction: column;
+    }
+
+    &-content {
+      width: 60%;
+      align-items: flex-start;
+      text-align: left;
+      min-height: auto;
+      font-size: 12px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .characteristics .show-more {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .characteristics-row {
+    gap: 12px;
+  }
+
+  .characteristics-card {
+    &:not(.characteristics-card--small) {
+      max-width: calc(50% - 6px);
+      min-width: auto;
+    }
+  }
+
+  .plans {
+    .container {
+      position: relative;
+    }
+    &-slider {
+      margin-top: 24px;
+      padding-bottom: 64px;
+        .slick-arrow {
+          transform: none;
+          top: auto;
+          bottom: 0;
+          height: 40px;
+          width: 40px;
+        }
+    }
+
+    .btn-get-price-mob  {
+      max-width: 164px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .amenities {
+    padding-bottom: 40px;
+    &:before {
+      height: 100%;
+    }
+  }
+  
+  .materials {
+    h2 {
+      font-size: 16px;
+    }
+    &-list {
+      gap: 8px;
+      li {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .tour {
+    padding-bottom: 40px;
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .map {
+    &-frame {
+      margin-top: 24px;
+    }
+  }
 }

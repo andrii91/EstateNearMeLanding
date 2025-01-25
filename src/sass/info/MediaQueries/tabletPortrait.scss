@@ -4,7 +4,17 @@
   @import '../mobile';
 
   & {
-     
+    .materials {
+      h2 {
+        font-size: 24px;
+      }
+      &-list {
+        gap: 16px;
+        li {
+          max-width: calc(50% - 8px);
+        }
+      }
+    }
   }
 
 }

@@ -6,4 +6,18 @@
   .xl-none {
     display: none;
   }
+
+  .schedule-row {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .materials {
+
+    &-list {
+      li {
+        max-width: calc(50% - 8px);
+      }
+    }
+  }
 }
