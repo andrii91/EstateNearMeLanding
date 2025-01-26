@@ -380,16 +380,16 @@
 
         <div class="col-xl-10">
           <ul class="navigation-menu">
-            <li><a href="#">Преимущества</a></li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">Фотогалерея</a></li>
-            <li><a href="#">Все обьекты</a></li>
-            <li><a href="#">Платежи</a></li>
-            <li><a href="#">Характеристики</a></li>
-            <li><a href="#">Планировки</a></li>
-            <li><a href="#">Видео</a></li>
-            <li><a href="#">3D тур</a></li>
-            <li><a href="#">Расположение</a></li>
+            <li><a class="scroll" href="#advantages">Преимущества</a></li>
+            <li><a class="scroll" href="#apartment">Цены</a></li>
+            <li><a class="scroll" href="#gallery">Фотогалерея</a></li>
+            <li><a class="scroll" href="#object">Все обьекты</a></li>
+            <li><a class="scroll" href="#schedule">Платежи</a></li>
+            <li><a class="scroll" href="#characteristics">Характеристики</a></li>
+            <li><a class="scroll" href="#plans">Планировки</a></li>
+            <li><a class="scroll" href="#amenities">Видео</a></li>
+            <li><a class="scroll" href="#tour">3D тур</a></li>
+            <li><a class="scroll" href="#location">Расположение</a></li>
             
             <li class="phone">
               <a href="tel:+34654359318">
@@ -426,7 +426,7 @@
   </header>
 
   <main>
-    <section class="section advantages">
+    <section id="advantages" class="section advantages">
       <div class="container">
         <h2>Преимущества комплекса</h2>
 
@@ -470,7 +470,7 @@
       </div>
     </section>
 
-    <section class="section apartment">
+    <section id="apartment" class="section apartment">
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
@@ -529,7 +529,7 @@
       </div>
     </section>
 
-    <section class="section gallery">
+    <section id="gallery" class="section gallery">
       <div class="container">
         <div class="row">
           <div class="col-8 col-sm-9">
@@ -610,7 +610,7 @@
       </div>
     </section>
 
-    <section class="section object">
+    <section id="object" class="section object">
       <div class="container">
         <h2>Объекты в этом комплексе</h2>
         <div class="table-container">
@@ -934,10 +934,13 @@
             <div class="label">
               <input type="email" class="custom-input" value="" name="email" placeholder="Email *" required>
             </div>
-
+            <label for="oferta_2-1" class="custom-checkbox xl-none">
+              <input id="oferta_2-1" type="checkbox" name="oferta">
+              <span>Я согласен с <a href="#">условиями обработки персональных данных</a></span>
+            </label>
             <button type="submit" class="get-info-form-btn btn-regular btn-white submit">Отправить</button>
           </div>
-          <label for="oferta_2" class="custom-checkbox">
+          <label for="oferta_2" class="custom-checkbox xs-none">
             <input id="oferta_2" type="checkbox" name="oferta">
             <span>Я согласен с <a href="#">условиями обработки персональных данных</a></span>
           </label>
@@ -945,7 +948,7 @@
       </div>
     </section>
 
-    <section class="section schedule">
+    <section id="schedule" class="section schedule">
       <div class="container">
         <h2>График платежей</h2>
 
@@ -991,7 +994,7 @@
       </div>
     </section>
 
-    <section class="section characteristics">
+    <section id="characteristics" class="section characteristics">
       <div class="container">
         <h2>Характеристики недвижимости</h2>
 
@@ -1154,7 +1157,7 @@
       </div>
     </section>
 
-    <section class="section plans">
+    <section id="plans" class="section plans">
       <div class="container">
         <h2>Квартиры в ЖК Residencial Royal Beach</h2>
 
@@ -1247,7 +1250,7 @@
       </div>
     </section>
 
-    <section class="section amenities">
+    <section id="amenities" class="section amenities">
       <div class="container">
         <h2>Удобства:</h2>
         <ul class="amenities-list">
@@ -1396,7 +1399,7 @@
       </div>
     </section>
 
-    <section class="section tour">
+    <section id="tour" class="section tour">
       <div class="container">
         <h2>Виртуальный тур Residencial Royal Beach</h2>
         <div class="embed-responsive embed-responsive-16by9">
@@ -1405,7 +1408,7 @@
       </div>
     </section>
 
-    <section class="section map">
+    <section id="location" class="section map">
       <div class="container">
         <h2>Расположение ЖК Residencial Royal Beach</h2>
         <p class="map-address">Аликанте, Гуардамар Дель Сегура, pueblo, Miguel Hernández 102</p>
@@ -1416,12 +1419,391 @@
       </div>
     </section>
 
-    <section class="section help">
+    <section class="section assistance">
       <div class="container">
-        <div class="help-manager"></div>
+        <div class="assistance-manager">
+          <div class="assistance-manager-photo xs-none">
+            <img src="images/rectangle28445.webp" alt="">
+          </div>
+          <div class="assistance-manager-content">
+            <h4 class="assistance-manager-title">Помощь в выборе недвижимости</h4>
+            <p class="assistance-manager-info">Сделаю процесс выбора и покупки недвижимости легким и приятным. С вами будет работать команда профессионалов, которая обеспечит комфорт на каждом этапе. Ваш идеальный дом уже ждет!</p>
+
+            <div class="assistance-manager-content-row xs-none">
+              <div>
+                <div class="assistance-manager-name">Андрей Петров</div>
+                <div class="assistance-manager-post">Директор</div>
+              </div>
+
+              <div class="assistance-manager-language">
+                <div class="title">Владеет <br>языками:</div>
+                <div class="assistance-manager-language-item">
+                  <img src="images/ru.svg" alt="">
+                  <img src="images/es.svg" alt="">
+                  <img src="images/gb.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="assistance-manager-mob xl-none">
+            <div class="assistance-manager-photo">
+              <img src="images/rectangle28445.webp" alt="">
+            </div>
+            <div class="assistance-manager-content-row">
+              <div>
+                <div class="assistance-manager-name">Андрей Петров</div>
+                <div class="assistance-manager-post">Директор</div>
+              </div>
+              <a href="tel:+34654359318" class="assistance-manager-phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.20726 4.03703L4.78528 1.66707C4.60148 1.36074 4.21024 1.25557 3.91172 1.45181C3.18561 1.92915 1.95988 2.86437 1.68517 3.88899C1.29302 5.35166 2.67297 7.61533 2.72277 7.69636L2.72577 7.70105C2.77796 7.7801 4.08002 9.74711 5.14837 10.8155C6.21674 11.8838 8.18374 13.1859 8.26293 13.2382L8.26764 13.2412C8.34881 13.2911 10.6123 14.6708 12.075 14.2788C13.0996 14.0043 14.035 12.779 14.5126 12.053C14.709 11.7545 14.6038 11.3631 14.2974 11.1793L11.9274 9.75729C11.6223 9.5742 11.2271 9.66305 11.0297 9.95915L10.3647 10.9568C10.1613 11.2618 9.75102 11.3451 9.45032 11.1353C8.77153 10.6617 7.61386 9.81768 6.88009 9.08391C6.14639 8.35021 5.30247 7.19269 4.82883 6.51387C4.61896 6.2131 4.70235 5.80272 5.00759 5.5994L6.00519 4.93487C6.30144 4.73753 6.3904 4.34226 6.20726 4.03703Z" fill="#7BA2BF"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63736 1.03404C4.19222 0.669276 4.89618 0.879609 5.21432 1.40986L6.6363 3.77981C6.95679 4.31397 6.80111 5.00568 6.28268 5.35103L5.28507 6.01555C5.20651 6.06789 5.19428 6.16346 5.23917 6.22779C5.71309 6.90702 6.53483 8.03128 7.23393 8.73038C7.9331 9.42955 9.05752 10.2514 9.73672 10.7253C9.80104 10.7702 9.89659 10.758 9.94894 10.6794L10.614 9.68183C10.9594 9.16366 11.651 9.00816 12.185 9.32857L14.555 10.7506C15.0853 11.0688 15.2956 11.773 14.9306 12.3278C14.6825 12.705 14.3093 13.2217 13.8568 13.6847C13.413 14.1388 12.8463 14.5899 12.2047 14.7618C11.3035 15.0033 10.2366 14.6961 9.46859 14.3903C8.67155 14.0729 8.05768 13.6989 8.00611 13.6672L7.99867 13.6626L7.98774 13.6556C7.91687 13.6088 5.90558 12.2795 4.79511 11.169C3.68466 10.0586 2.35547 8.04727 2.30878 7.97653L2.30469 7.97033L2.29705 7.95828C2.26539 7.90677 1.89141 7.29286 1.57401 6.4958C1.26819 5.7278 0.960881 4.66083 1.20252 3.75954C1.37455 3.11788 1.82582 2.55127 2.28007 2.10753C2.74324 1.65508 3.26008 1.28205 3.63736 1.03404ZM4.26902 1.85569C4.24037 1.84843 4.21317 1.85223 4.18668 1.86965C3.83784 2.09897 3.37876 2.43221 2.97885 2.82287C2.57003 3.22223 2.27108 3.63554 2.16841 4.0185C2.0179 4.57987 2.20449 5.37608 2.50306 6.12584C2.78081 6.82335 3.109 7.36892 3.14628 7.43006C3.2347 7.5637 4.48955 9.44926 5.50222 10.4619C6.51494 11.4747 8.40059 12.7296 8.53426 12.818C8.59552 12.8554 9.14106 13.1835 9.83852 13.4612C10.5883 13.7597 11.3845 13.9463 11.9459 13.7959C12.3288 13.6933 12.7422 13.3944 13.1416 12.9857C13.5324 12.586 13.8657 12.127 14.0952 11.7783C14.1126 11.7518 14.1164 11.7246 14.1091 11.6959C14.1014 11.6653 14.08 11.6318 14.0405 11.6081L11.6705 10.1861C11.5942 10.1403 11.4954 10.1625 11.4461 10.2365L10.781 11.2341C10.4266 11.7658 9.70159 11.9201 9.16451 11.5454C8.48613 11.0721 7.2952 10.2059 6.52683 9.43749C5.75853 8.66919 4.89243 7.47843 4.41907 6.80001C4.04423 6.26279 4.19878 5.53761 4.73069 5.1833L5.72829 4.51877C5.80235 4.46943 5.82459 4.37062 5.77881 4.29431L4.35683 1.92435C4.33315 1.88488 4.29961 1.86344 4.26902 1.85569Z" fill="#7BA2BF"/>
+                </svg>
+                +34 654 359 318
+              </a>
+              <div class="assistance-manager-language">
+                <div class="title">Владеет <br>языками:</div>
+                <div class="assistance-manager-language-item">
+                  <img src="images/ru.svg" alt="">
+                  <img src="images/es.svg" alt="">
+                  <img src="images/gb.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assistance-manager-button">
+            <div class="assistance-manager-badge">
+              <div class="title">Премиальное качество</div>
+              <div class="subtitle">в каждом предоставляемом сервисе</div>
+            </div>
+
+            <a href="tel:+34654359318" class="assistance-manager-phone xs-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6.20726 4.03703L4.78528 1.66707C4.60148 1.36074 4.21024 1.25557 3.91172 1.45181C3.18561 1.92915 1.95988 2.86437 1.68517 3.88899C1.29302 5.35166 2.67297 7.61533 2.72277 7.69636L2.72577 7.70105C2.77796 7.7801 4.08002 9.74711 5.14837 10.8155C6.21674 11.8838 8.18374 13.1859 8.26293 13.2382L8.26764 13.2412C8.34881 13.2911 10.6123 14.6708 12.075 14.2788C13.0996 14.0043 14.035 12.779 14.5126 12.053C14.709 11.7545 14.6038 11.3631 14.2974 11.1793L11.9274 9.75729C11.6223 9.5742 11.2271 9.66305 11.0297 9.95915L10.3647 10.9568C10.1613 11.2618 9.75102 11.3451 9.45032 11.1353C8.77153 10.6617 7.61386 9.81768 6.88009 9.08391C6.14639 8.35021 5.30247 7.19269 4.82883 6.51387C4.61896 6.2131 4.70235 5.80272 5.00759 5.5994L6.00519 4.93487C6.30144 4.73753 6.3904 4.34226 6.20726 4.03703Z" fill="#7BA2BF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63736 1.03404C4.19222 0.669276 4.89618 0.879609 5.21432 1.40986L6.6363 3.77981C6.95679 4.31397 6.80111 5.00568 6.28268 5.35103L5.28507 6.01555C5.20651 6.06789 5.19428 6.16346 5.23917 6.22779C5.71309 6.90702 6.53483 8.03128 7.23393 8.73038C7.9331 9.42955 9.05752 10.2514 9.73672 10.7253C9.80104 10.7702 9.89659 10.758 9.94894 10.6794L10.614 9.68183C10.9594 9.16366 11.651 9.00816 12.185 9.32857L14.555 10.7506C15.0853 11.0688 15.2956 11.773 14.9306 12.3278C14.6825 12.705 14.3093 13.2217 13.8568 13.6847C13.413 14.1388 12.8463 14.5899 12.2047 14.7618C11.3035 15.0033 10.2366 14.6961 9.46859 14.3903C8.67155 14.0729 8.05768 13.6989 8.00611 13.6672L7.99867 13.6626L7.98774 13.6556C7.91687 13.6088 5.90558 12.2795 4.79511 11.169C3.68466 10.0586 2.35547 8.04727 2.30878 7.97653L2.30469 7.97033L2.29705 7.95828C2.26539 7.90677 1.89141 7.29286 1.57401 6.4958C1.26819 5.7278 0.960881 4.66083 1.20252 3.75954C1.37455 3.11788 1.82582 2.55127 2.28007 2.10753C2.74324 1.65508 3.26008 1.28205 3.63736 1.03404ZM4.26902 1.85569C4.24037 1.84843 4.21317 1.85223 4.18668 1.86965C3.83784 2.09897 3.37876 2.43221 2.97885 2.82287C2.57003 3.22223 2.27108 3.63554 2.16841 4.0185C2.0179 4.57987 2.20449 5.37608 2.50306 6.12584C2.78081 6.82335 3.109 7.36892 3.14628 7.43006C3.2347 7.5637 4.48955 9.44926 5.50222 10.4619C6.51494 11.4747 8.40059 12.7296 8.53426 12.818C8.59552 12.8554 9.14106 13.1835 9.83852 13.4612C10.5883 13.7597 11.3845 13.9463 11.9459 13.7959C12.3288 13.6933 12.7422 13.3944 13.1416 12.9857C13.5324 12.586 13.8657 12.127 14.0952 11.7783C14.1126 11.7518 14.1164 11.7246 14.1091 11.6959C14.1014 11.6653 14.08 11.6318 14.0405 11.6081L11.6705 10.1861C11.5942 10.1403 11.4954 10.1625 11.4461 10.2365L10.781 11.2341C10.4266 11.7658 9.70159 11.9201 9.16451 11.5454C8.48613 11.0721 7.2952 10.2059 6.52683 9.43749C5.75853 8.66919 4.89243 7.47843 4.41907 6.80001C4.04423 6.26279 4.19878 5.53761 4.73069 5.1833L5.72829 4.51877C5.80235 4.46943 5.82459 4.37062 5.77881 4.29431L4.35683 1.92435C4.33315 1.88488 4.29961 1.86344 4.26902 1.85569Z" fill="#7BA2BF"/>
+              </svg>
+              +34 654 359 318
+            </a>
+            <a href="#" class="btn-regular order-first">Связаться</a>
+          </div>
+        </div>
+
+        <div class="assistance-text">
+          <div class="assistance-text-item">
+            <h4>Недвижимость в ЖК Residencial Royal Beach</h4>
+            <p>Этот новый жилой комплекс расположен в центре города Guardamar del Segura (Alicante), всего <b>в 5 минутах ходьбы от пляжа</b>, с легким доступом ко всем необходимым услугам.</p>
+          </div>
+
+          <div class="assistance-text-item">
+            <h4>Преимущества новостройки Residencial Royal Beach</h4>
+            <p>Проект предлагает <b>10 эксклюзивных квартир</b>, каждая из которых имеет 3 спальни и 2 ванные комнаты. У вас есть возможность выбрать квартиры на первых этажах с отдельным входом и частным бассейном, квартиры на промежуточных этажах с просторными террасами или пентхаусы.</p>
+            <p>Комплекс включает в себя общий солярий с джакузи, зонами отдыха и кладовыми. Дополнительно предлагаются парковочные места всего в 4 минутах от жилого комплекса.</p>
+          </div>
+
+          <p>Высокое качество жилищ, в сочетании с привилегированным местоположением и привлекательной ценой, делает этот жилой комплекс идеальным выбором для инвестиций, отдыха или постоянного проживания.</p>
+
+          <div class="assistance-text-item">
+            <h4>Жизнь в городе Guardamar del Segura</h4>
+            <p><b>Guardamar del Segura</b> – это город, очарованный своим уникальным сочетанием современности и природной красоты. Близость к пляжам, обширные парки и разнообразие культурных мероприятий делают это место весьма привлекательным для жизни и отдыха.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Остались вопросы?</h3>
+            <a href="tel:+34654359318" class="contacts-phone">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6.20726 4.03703L4.78528 1.66707C4.60148 1.36074 4.21024 1.25557 3.91172 1.45181C3.18561 1.92915 1.95988 2.86437 1.68517 3.88899C1.29302 5.35166 2.67297 7.61533 2.72277 7.69636L2.72577 7.70105C2.77796 7.7801 4.08002 9.74711 5.14837 10.8155C6.21674 11.8838 8.18374 13.1859 8.26293 13.2382L8.26764 13.2412C8.34881 13.2911 10.6123 14.6708 12.075 14.2788C13.0996 14.0043 14.035 12.779 14.5126 12.053C14.709 11.7545 14.6038 11.3631 14.2974 11.1793L11.9274 9.75729C11.6223 9.5742 11.2271 9.66305 11.0297 9.95915L10.3647 10.9568C10.1613 11.2618 9.75102 11.3451 9.45032 11.1353C8.77153 10.6617 7.61386 9.81768 6.88009 9.08391C6.14639 8.35021 5.30247 7.19269 4.82883 6.51387C4.61896 6.2131 4.70235 5.80272 5.00759 5.5994L6.00519 4.93487C6.30144 4.73753 6.3904 4.34226 6.20726 4.03703Z" fill="#7BA2BF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63736 1.03404C4.19222 0.669276 4.89618 0.879609 5.21432 1.40986L6.6363 3.77981C6.95679 4.31397 6.80111 5.00568 6.28268 5.35103L5.28507 6.01555C5.20651 6.06789 5.19428 6.16346 5.23917 6.22779C5.71309 6.90702 6.53483 8.03128 7.23393 8.73038C7.9331 9.42955 9.05752 10.2514 9.73672 10.7253C9.80104 10.7702 9.89659 10.758 9.94894 10.6794L10.614 9.68183C10.9594 9.16366 11.651 9.00816 12.185 9.32857L14.555 10.7506C15.0853 11.0688 15.2956 11.773 14.9306 12.3278C14.6825 12.705 14.3093 13.2217 13.8568 13.6847C13.413 14.1388 12.8463 14.5899 12.2047 14.7618C11.3035 15.0033 10.2366 14.6961 9.46859 14.3903C8.67155 14.0729 8.05768 13.6989 8.00611 13.6672L7.99867 13.6626L7.98774 13.6556C7.91687 13.6088 5.90558 12.2795 4.79511 11.169C3.68466 10.0586 2.35547 8.04727 2.30878 7.97653L2.30469 7.97033L2.29705 7.95828C2.26539 7.90677 1.89141 7.29286 1.57401 6.4958C1.26819 5.7278 0.960881 4.66083 1.20252 3.75954C1.37455 3.11788 1.82582 2.55127 2.28007 2.10753C2.74324 1.65508 3.26008 1.28205 3.63736 1.03404ZM4.26902 1.85569C4.24037 1.84843 4.21317 1.85223 4.18668 1.86965C3.83784 2.09897 3.37876 2.43221 2.97885 2.82287C2.57003 3.22223 2.27108 3.63554 2.16841 4.0185C2.0179 4.57987 2.20449 5.37608 2.50306 6.12584C2.78081 6.82335 3.109 7.36892 3.14628 7.43006C3.2347 7.5637 4.48955 9.44926 5.50222 10.4619C6.51494 11.4747 8.40059 12.7296 8.53426 12.818C8.59552 12.8554 9.14106 13.1835 9.83852 13.4612C10.5883 13.7597 11.3845 13.9463 11.9459 13.7959C12.3288 13.6933 12.7422 13.3944 13.1416 12.9857C13.5324 12.586 13.8657 12.127 14.0952 11.7783C14.1126 11.7518 14.1164 11.7246 14.1091 11.6959C14.1014 11.6653 14.08 11.6318 14.0405 11.6081L11.6705 10.1861C11.5942 10.1403 11.4954 10.1625 11.4461 10.2365L10.781 11.2341C10.4266 11.7658 9.70159 11.9201 9.16451 11.5454C8.48613 11.0721 7.2952 10.2059 6.52683 9.43749C5.75853 8.66919 4.89243 7.47843 4.41907 6.80001C4.04423 6.26279 4.19878 5.53761 4.73069 5.1833L5.72829 4.51877C5.80235 4.46943 5.82459 4.37062 5.77881 4.29431L4.35683 1.92435C4.33315 1.88488 4.29961 1.86344 4.26902 1.85569Z" fill="#7BA2BF"/>
+              </svg>
+              +34 654 359 318
+            </a>
+            <p>Позвоните нам, или заполните короткую форму и мы сами с вами свяжемся:</p>
+            <form id="contacts-form" class="contacts-form" action="#">
+              <div class="label">
+                <input type="text" class="custom-input" value="" name="name" placeholder="Ваше имя *" required>
+              </div>
+              <div class="label">
+                <div class="call-me-form-row ">
+                  <div class="input-phone">
+                    <select class="custom-select" name="phone_code">
+                      <option value="us">+1 (US)</option>
+                      <option value="ru">+7 (RU)</option>
+                      <option value="eg">+20 (EG)</option>
+                      <option value="za">+27 (ZA)</option>
+                      <option value="gr">+30 (GR)</option>
+                      <option value="nl">+31 (NL)</option>
+                      <option value="be">+32 (BE)</option>
+                      <option value="fr">+33 (FR)</option>
+                      <option value="es">+34 (ES)</option>
+                      <option value="hu">+36 (HU)</option>
+                      <option value="it">+39 (IT)</option>
+                      <option value="ro">+40 (RO)</option>
+                      <option value="ch">+41 (CH)</option>
+                      <option value="at">+43 (AT)</option>
+                      <option value="gb">+44 (GB)</option>
+                      <option value="dk">+45 (DK)</option>
+                      <option value="se">+46 (SE)</option>
+                      <option value="no">+47 (NO)</option>
+                      <option value="pl">+48 (PL)</option>
+                      <option value="de">+49 (DE)</option>
+                      <option value="pe">+51 (PE)</option>
+                      <option value="mx">+52 (MX)</option>
+                      <option value="cu">+53 (CU)</option>
+                      <option value="ar">+54 (AR)</option>
+                      <option value="br">+55 (BR)</option>
+                      <option value="cl">+56 (CL)</option>
+                      <option value="co">+57 (CO)</option>
+                      <option value="ve">+58 (VE)</option>
+                      <option value="my">+60 (MY)</option>
+                      <option value="au">+61 (AU)</option>
+                      <option value="id">+62 (ID)</option>
+                      <option value="ph">+63 (PH)</option>
+                      <option value="nz">+64 (NZ)</option>
+                      <option value="sg">+65 (SG)</option>
+                      <option value="th">+66 (TH)</option>
+                      <option value="jp">+81 (JP)</option>
+                      <option value="kr">+82 (KR)</option>
+                      <option value="vn">+84 (VN)</option>
+                      <option value="cn">+86 (CN)</option>
+                      <option value="tr">+90 (TR)</option>
+                      <option value="in">+91 (IN)</option>
+                      <option value="pk">+92 (PK)</option>
+                      <option value="af">+93 (AF)</option>
+                      <option value="lk">+94 (LK)</option>
+                      <option value="mm">+95 (MM)</option>
+                      <option value="ir">+98 (IR)</option>
+                      <option value="ss">+211 (SS)</option>
+                      <option value="ma">+212 (MA)</option>
+                      <option value="dz">+213 (DZ)</option>
+                      <option value="tn">+216 (TN)</option>
+                      <option value="ly">+218 (LY)</option>
+                      <option value="gm">+220 (GM)</option>
+                      <option value="sn">+221 (SN)</option>
+                      <option value="mr">+222 (MR)</option>
+                      <option value="ml">+223 (ML)</option>
+                      <option value="gn">+224 (GN)</option>
+                      <option value="ci">+225 (CI)</option>
+                      <option value="bf">+226 (BF)</option>
+                      <option value="ne">+227 (NE)</option>
+                      <option value="tg">+228 (TG)</option>
+                      <option value="bj">+229 (BJ)</option>
+                      <option value="mu">+230 (MU)</option>
+                      <option value="lr">+231 (LR)</option>
+                      <option value="sl">+232 (SL)</option>
+                      <option value="gh">+233 (GH)</option>
+                      <option value="ng">+234 (NG)</option>
+                      <option value="td">+235 (TD)</option>
+                      <option value="cf">+236 (CF)</option>
+                      <option value="cm">+237 (CM)</option>
+                      <option value="cv">+238 (CV)</option>
+                      <option value="st">+239 (ST)</option>
+                      <option value="gq">+240 (GQ)</option>
+                      <option value="ga">+241 (GA)</option>
+                      <option value="cg">+242 (CG)</option>
+                      <option value="cd">+243 (CD)</option>
+                      <option value="ao">+244 (AO)</option>
+                      <option value="gw">+245 (GW)</option>
+                      <option value="io">+246 (IO)</option>
+                      <option value="ac">+247 (AC)</option>
+                      <option value="sc">+248 (SC)</option>
+                      <option value="sd">+249 (SD)</option>
+                      <option value="rw">+250 (RW)</option>
+                      <option value="et">+251 (ET)</option>
+                      <option value="so">+252 (SO)</option>
+                      <option value="dj">+253 (DJ)</option>
+                      <option value="ke">+254 (KE)</option>
+                      <option value="tz">+255 (TZ)</option>
+                      <option value="ug">+256 (UG)</option>
+                      <option value="bi">+257 (BI)</option>
+                      <option value="mz">+258 (MZ)</option>
+                      <option value="zm">+260 (ZM)</option>
+                      <option value="mg">+261 (MG)</option>
+                      <option value="re">+262 (RE)</option>
+                      <option value="zw">+263 (ZW)</option>
+                      <option value="na">+264 (NA)</option>
+                      <option value="mw">+265 (MW)</option>
+                      <option value="ls">+266 (LS)</option>
+                      <option value="bw">+267 (BW)</option>
+                      <option value="sz">+268 (SZ)</option>
+                      <option value="km">+269 (KM)</option>
+                      <option value="sh">+290 (SH)</option>
+                      <option value="er">+291 (ER)</option>
+                      <option value="aw">+297 (AW)</option>
+                      <option value="fo">+298 (FO)</option>
+                      <option value="gl">+299 (GL)</option>
+                      <option value="gi">+350 (GI)</option>
+                      <option value="pt">+351 (PT)</option>
+                      <option value="lu">+352 (LU)</option>
+                      <option value="ie">+353 (IE)</option>
+                      <option value="is">+354 (IS)</option>
+                      <option value="al">+355 (AL)</option>
+                      <option value="mt">+356 (MT)</option>
+                      <option value="cy">+357 (CY)</option>
+                      <option value="fi">+358 (FI)</option>
+                      <option value="bg">+359 (BG)</option>
+                      <option value="lt">+370 (LT)</option>
+                      <option value="lv">+371 (LV)</option>
+                      <option value="ee">+372 (EE)</option>
+                      <option value="md">+373 (MD)</option>
+                      <option value="am">+374 (AM)</option>
+                      <option value="by">+375 (BY)</option>
+                      <option value="ad">+376 (AD)</option>
+                      <option value="mc">+377 (MC)</option>
+                      <option value="sm">+378 (SM)</option>
+                      <option value="ua">+380 (UA)</option>
+                      <option value="rs">+381 (RS)</option>
+                      <option value="me">+382 (ME)</option>
+                      <option value="xk">+383 (XK)</option>
+                      <option value="hr">+385 (HR)</option>
+                      <option value="si">+386 (SI)</option>
+                      <option value="ba">+387 (BA)</option>
+                      <option value="mk">+389 (MK)</option>
+                      <option value="cz">+420 (CZ)</option>
+                      <option value="sk">+421 (SK)</option>
+                      <option value="li">+423 (LI)</option>
+                      <option value="fk">+500 (FK)</option>
+                      <option value="bz">+501 (BZ)</option>
+                      <option value="gt">+502 (GT)</option>
+                      <option value="sv">+503 (SV)</option>
+                      <option value="hn">+504 (HN)</option>
+                      <option value="ni">+505 (NI)</option>
+                      <option value="cr">+506 (CR)</option>
+                      <option value="pa">+507 (PA)</option>
+                      <option value="pm">+508 (PM)</option>
+                      <option value="ht">+509 (HT)</option>
+                      <option value="gp">+590 (GP)</option>
+                      <option value="bo">+591 (BO)</option>
+                      <option value="gy">+592 (GY)</option>
+                      <option value="ec">+593 (EC)</option>
+                      <option value="gf">+594 (GF)</option>
+                      <option value="py">+595 (PY)</option>
+                      <option value="mq">+596 (MQ)</option>
+                      <option value="sr">+597 (SR)</option>
+                      <option value="uy">+598 (UY)</option>
+                      <option value="cw">+599 (CW)</option>
+                      <option value="tl">+670 (TL)</option>
+                      <option value="nf">+672 (NF)</option>
+                      <option value="bn">+673 (BN)</option>
+                      <option value="nr">+674 (NR)</option>
+                      <option value="pg">+675 (PG)</option>
+                      <option value="to">+676 (TO)</option>
+                      <option value="sb">+677 (SB)</option>
+                      <option value="vu">+678 (VU)</option>
+                      <option value="fj">+679 (FJ)</option>
+                      <option value="pw">+680 (PW)</option>
+                      <option value="wf">+681 (WF)</option>
+                      <option value="ck">+682 (CK)</option>
+                      <option value="nu">+683 (NU)</option>
+                      <option value="ws">+685 (WS)</option>
+                      <option value="ki">+686 (KI)</option>
+                      <option value="nc">+687 (NC)</option>
+                      <option value="tv">+688 (TV)</option>
+                      <option value="pf">+689 (PF)</option>
+                      <option value="tk">+690 (TK)</option>
+                      <option value="fm">+691 (FM)</option>
+                      <option value="mh">+692 (MH)</option>
+                      <option value="001">+979 (001)</option>
+                      <option value="kp">+850 (KP)</option>
+                      <option value="hk">+852 (HK)</option>
+                      <option value="mo">+853 (MO)</option>
+                      <option value="kh">+855 (KH)</option>
+                      <option value="la">+856 (LA)</option>
+                      <option value="bd">+880 (BD)</option>
+                      <option value="tw">+886 (TW)</option>
+                      <option value="mv">+960 (MV)</option>
+                      <option value="lb">+961 (LB)</option>
+                      <option value="jo">+962 (JO)</option>
+                      <option value="sy">+963 (SY)</option>
+                      <option value="iq">+964 (IQ)</option>
+                      <option value="kw">+965 (KW)</option>
+                      <option value="sa">+966 (SA)</option>
+                      <option value="ye">+967 (YE)</option>
+                      <option value="om">+968 (OM)</option>
+                      <option value="ps">+970 (PS)</option>
+                      <option value="ae">+971 (AE)</option>
+                      <option value="il">+972 (IL)</option>
+                      <option value="bh">+973 (BH)</option>
+                      <option value="qa">+974 (QA)</option>
+                      <option value="bt">+975 (BT)</option>
+                      <option value="mn">+976 (MN)</option>
+                      <option value="np">+977 (NP)</option>
+                      <option value="tj">+992 (TJ)</option>
+                      <option value="tm">+993 (TM)</option>
+                      <option value="az">+994 (AZ)</option>
+                      <option value="ge">+995 (GE)</option>
+                      <option value="kg">+996 (KG)</option>
+                      <option value="uz">+998 (UZ)</option>
+                    </select>
+                    <input type="tel" name="phone" class="custom-input" placeholder="00000000" required>
+                  </div>
+                </div>
+              </div>
+              <label for="oferta_3" class="custom-checkbox">
+                <input id="oferta_3" type="checkbox" name="oferta">
+                <span>Я согласен с <a href="#">условиями обработки персональных данных</a></span>
+              </label>
+              <button type="submit" class="submit contacts-submit btn-regular btn-white">Отправить</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="contacts-item">
+              <h4>На бесплатной <br>консультации вы получите:</h4>
+              <ul>
+                <li>Информацию об объекте: инфраструктура, характеристики, преимущества и другое</li>
+                <li>Информацию о ценах на объекты и способах оплаты</li>
+                <li>Советы по выбору недвижимости, подходящей под ваши нужды и бюджет.</li>
+              </ul>
+              <svg class="hr" xmlns="http://www.w3.org/2000/svg" width="303" height="6" viewBox="0 0 303 6" fill="none">
+                <path d="M5.5 2.5L0.5 0.113249V5.88675L5.5 3.5V2.5ZM297.5 3.5L302.5 5.88675V0.113249L297.5 2.5V3.5ZM5 3.5H298V2.5H5V3.5Z" fill="#3E5D74"/>
+              </svg>
+
+              <div class="consultant">
+                <div class="consultant-photo">
+                  <img src="images/consultant.webp" alt="">
+                </div>
+                <div class="consultant-content">
+                  <div class="title">Мария Гонсалес</div>
+                  <div class="post">консультант</div>
+                </div>
+                <svg class="consultant-certificat" viewBox="0 0 36 35" fill="none">
+                  <path d="M26.7774 33.7695C26.5819 33.7695 26.4021 33.6649 26.3044 33.4961L22.4079 26.7476C22.2568 26.4858 22.3464 26.1515 22.6082 26.0004C22.87 25.8494 23.2043 25.9389 23.3553 26.2007L26.6674 31.9381L27.4337 29.8498C27.5246 29.6016 27.7796 29.454 28.04 29.4991L30.2364 29.8785L26.759 23.8574C26.6079 23.5956 26.6974 23.2606 26.9592 23.1102C27.2211 22.9598 27.556 23.0487 27.7064 23.3105L31.7656 30.3426C31.9167 30.6045 31.8264 30.9387 31.5653 31.0898C31.4546 31.1534 31.3254 31.1766 31.1989 31.1547L28.3046 30.655L27.2908 33.4113C27.2176 33.6102 27.0358 33.749 26.8246 33.7674L26.7774 33.7695Z" fill="#3E5D74"/>
+                  <path d="M9.22277 33.7695H9.1756C8.96437 33.751 8.78254 33.6122 8.70939 33.4133L7.69562 30.6571L4.80129 31.1568C4.50392 31.208 4.22091 31.0084 4.16965 30.7111C4.14777 30.5853 4.17101 30.4554 4.23459 30.3447L8.28761 23.3235C8.4339 23.0589 8.76681 22.9632 9.03068 23.1095C9.20363 23.2052 9.31164 23.3871 9.313 23.5853C9.313 23.681 9.28771 23.7753 9.23986 23.8587L5.76379 29.8785L7.95607 29.4991C8.21652 29.4539 8.4715 29.6016 8.56242 29.8497L9.33078 31.9381L12.6428 26.2007C12.7939 25.9389 13.1281 25.8494 13.39 26.0004C13.6518 26.1515 13.7413 26.4858 13.5903 26.7476L9.69377 33.496C9.5967 33.6642 9.41691 33.7688 9.22277 33.7695Z" fill="#3E5D74"/>
+                  <path d="M23.3321 13.9743H20.6921C20.3899 13.9743 20.1452 13.7296 20.1452 13.4274C20.1452 13.1253 20.3899 12.8805 20.6921 12.8805H23.3321C23.5454 12.8894 23.7252 12.724 23.7341 12.5107C23.743 12.2974 23.5775 12.1176 23.3643 12.1088C23.3533 12.1081 23.3424 12.1081 23.3314 12.1088H20.6914C20.3893 12.1088 20.1445 11.864 20.1445 11.5619C20.1445 11.2597 20.3893 11.015 20.6914 11.015H23.3321C24.149 10.9972 24.8258 11.646 24.8436 12.4629C24.8613 13.2798 24.2126 13.9565 23.3957 13.9743C23.3745 13.975 23.3533 13.975 23.3321 13.9743Z" fill="#3E5D74"/>
+                  <path d="M23.2185 16.0729H20.8081C20.506 16.0729 20.2612 15.8282 20.2612 15.5261C20.2612 15.2239 20.506 14.9792 20.8081 14.9792H23.2185C23.496 14.9689 23.7127 14.7358 23.7024 14.4576C23.6929 14.1944 23.4816 13.9832 23.2185 13.9736H20.8081C20.506 13.9736 20.2612 13.7289 20.2612 13.4268C20.2612 13.1246 20.506 12.8799 20.8081 12.8799H23.2185C24.1003 12.8983 24.8003 13.6277 24.7818 14.5096C24.7641 15.3654 24.0743 16.0552 23.2185 16.0729Z" fill="#3E5D74"/>
+                  <path d="M23.2187 18.1719H20.8083C20.5062 18.1719 20.2614 17.9271 20.2614 17.625C20.2614 17.3229 20.5062 17.0781 20.8083 17.0781H23.2187C23.4962 17.0781 23.7211 16.8532 23.7211 16.5757C23.7211 16.2981 23.4962 16.0732 23.2187 16.0732H23.218H20.8076C20.5055 16.0732 20.2607 15.8285 20.2607 15.5264C20.2607 15.2242 20.5055 14.9795 20.8076 14.9795H23.218C24.0998 14.9788 24.8142 15.6932 24.8148 16.575C24.8155 17.4568 24.1012 18.1712 23.2193 18.1719C23.2193 18.1719 23.2193 18.1719 23.2187 18.1719Z" fill="#3E5D74"/>
+                  <path d="M23.2186 20.2712H14.77C14.4679 20.2712 14.2231 20.0265 14.2231 19.7243C14.2231 19.4222 14.4679 19.1774 14.77 19.1774H23.2186C23.4961 19.1672 23.7128 18.9341 23.7025 18.6559C23.693 18.3927 23.4817 18.1814 23.2186 18.1719C22.9164 18.1719 22.6717 17.9271 22.6717 17.625C22.6717 17.3229 22.9164 17.0781 23.2186 17.0781C24.1004 17.0966 24.8004 17.826 24.7819 18.7078C24.7642 19.5637 24.0744 20.2534 23.2186 20.2712Z" fill="#3E5D74"/>
+                  <path d="M15.1198 20.2717H11.7319C11.4298 20.2717 11.1851 20.027 11.1851 19.7248V12.4951C11.1851 12.193 11.4298 11.9482 11.7319 11.9482H15.1198C15.422 11.9482 15.6667 12.193 15.6667 12.4951V19.7248C15.6667 20.027 15.422 20.2717 15.1198 20.2717ZM12.2788 19.1779H14.5729V13.042H12.2788V19.1779Z" fill="#3E5D74"/>
+                  <path d="M15.2299 13.0455C15.1711 13.0462 15.1123 13.0435 15.0542 13.0373L15.1854 11.9511H15.1779C15.2497 11.9579 16.9402 12.0803 18.1406 9.33838C18.1864 9.23379 18.2397 9.0957 18.2965 8.94941C18.5973 8.16943 18.9384 7.28623 19.6145 7.07158C19.9118 6.97861 20.2358 7.03057 20.4888 7.21309C21.1354 7.64375 21.9243 9.55029 21.2571 10.9229C21.2455 10.9476 21.227 10.9817 21.2031 11.0221C21.1669 11.0822 21.1361 11.1444 21.1095 11.2094C21.3077 11.437 21.2845 11.7822 21.0568 11.9812C20.8422 12.1685 20.5202 12.1596 20.3165 11.9613C20.0431 11.7063 19.8147 11.2415 20.2557 10.4772C20.2639 10.4636 20.2707 10.452 20.2755 10.4424C20.6624 9.64326 20.1518 8.40527 19.9063 8.14824C19.7054 8.33828 19.4367 9.03692 19.3171 9.34453C19.2556 9.50244 19.1981 9.65215 19.1428 9.77861C17.8173 12.8028 15.8314 13.0455 15.2299 13.0455Z" fill="#3E5D74"/>
+                  <path d="M13.4263 16.4968C13.1241 16.4968 12.8794 16.2521 12.8794 15.9499V13.9189C12.8794 13.6168 13.1241 13.3721 13.4263 13.3721C13.7284 13.3721 13.9731 13.6168 13.9731 13.9189V15.9499C13.9731 16.2521 13.7284 16.4968 13.4263 16.4968Z" fill="#3E5D74"/>
+                  <path d="M15.189 28.9672C15.0741 28.9672 14.9593 28.9542 14.8472 28.9289C14.1226 28.7642 13.6625 28.1086 13.2558 27.5344C12.9892 27.1557 12.7137 26.7647 12.4471 26.6355C12.1695 26.5022 11.6835 26.5295 11.2166 26.5568C10.52 26.5965 9.73047 26.6423 9.16104 26.187C8.5916 25.7317 8.45762 24.9483 8.34072 24.2586C8.26348 23.7965 8.1835 23.3187 7.99346 23.0808C7.80342 22.8429 7.35977 22.6624 6.92842 22.486C6.279 22.2194 5.54209 21.918 5.21943 21.2556C4.90498 20.6034 5.12441 19.846 5.31787 19.1788C5.44981 18.7242 5.58584 18.2546 5.5168 17.9484C5.45186 17.6647 5.13467 17.3119 4.82773 16.9708C4.354 16.4444 3.81738 15.8477 3.81738 15.0984C3.81738 14.3492 4.354 13.7525 4.82773 13.2261C5.13467 12.8843 5.45186 12.5322 5.5168 12.2485C5.58516 11.9437 5.44844 11.474 5.31787 11.0181C5.12441 10.3502 4.90771 9.59347 5.21943 8.94132C5.53936 8.27755 6.27627 7.97609 6.92842 7.71085C7.35977 7.5338 7.80615 7.35128 7.99346 7.11612C8.18076 6.88097 8.26689 6.4004 8.34072 5.93829C8.45625 5.24855 8.5875 4.46651 9.16104 4.00987C9.73457 3.55323 10.52 3.59972 11.2166 3.64005C11.6862 3.66739 12.1736 3.69474 12.4471 3.56144C12.7137 3.43224 12.9892 3.04122 13.2558 2.66251C13.6625 2.08624 14.1226 1.43204 14.8465 1.26798C15.5458 1.1087 16.2014 1.47306 16.8344 1.82442C17.2521 2.05616 17.6834 2.2961 18.0026 2.2961C18.3219 2.2961 18.7546 2.05616 19.1709 1.82442C19.8039 1.47306 20.4588 1.1087 21.1581 1.26798C21.8827 1.43273 22.3428 2.08829 22.7495 2.66251C23.0161 3.04122 23.2916 3.43224 23.5582 3.56144C23.8357 3.69474 24.3211 3.66739 24.7887 3.64005C25.4853 3.6004 26.2748 3.5546 26.8442 4.00987C27.4137 4.46515 27.5477 5.24855 27.6646 5.93829C27.7418 6.4004 27.8218 6.87823 28.0118 7.11612C28.2019 7.35401 28.6455 7.53448 29.0769 7.71085C29.7263 7.97745 30.4632 8.27892 30.7858 8.94132C31.1003 9.59347 30.8809 10.3502 30.6874 11.0181C30.5555 11.4727 30.4194 11.9423 30.4885 12.2485C30.5534 12.5322 30.8706 12.885 31.1775 13.2261C31.6513 13.7525 32.1879 14.3492 32.1879 15.0984C32.1879 15.8477 31.6513 16.4444 31.1775 16.9708C30.8706 17.3126 30.5534 17.6647 30.4885 17.9484C30.4201 18.2532 30.5568 18.7229 30.6874 19.1788C30.8809 19.846 31.0976 20.6034 30.7858 21.2556C30.4659 21.9193 29.729 22.2208 29.0769 22.486C28.6455 22.6624 28.1991 22.8456 28.0118 23.0808C27.8245 23.3159 27.7418 23.7965 27.6646 24.2586C27.549 24.9483 27.4178 25.7304 26.8442 26.187C26.2707 26.6437 25.4853 26.5972 24.7887 26.5568C24.319 26.5295 23.8316 26.5022 23.5582 26.6355C23.2916 26.7647 23.0161 27.1557 22.7495 27.5344C22.3428 28.1107 21.8827 28.7649 21.1588 28.9289C20.4595 29.0882 19.8039 28.7238 19.1709 28.3725C18.7532 28.14 18.3219 27.9008 18.0026 27.9008C17.6834 27.9008 17.2507 28.14 16.8344 28.3725C16.3039 28.6657 15.7604 28.9672 15.189 28.9672ZM11.7881 25.4405C12.1846 25.4405 12.5729 25.4829 12.9194 25.6504C13.4417 25.9026 13.8006 26.4119 14.1499 26.9041C14.4575 27.3402 14.7747 27.7928 15.0892 27.8611C15.3804 27.9295 15.85 27.667 16.3032 27.4148C16.8426 27.1153 17.397 26.8057 18.0026 26.8057C18.6083 26.8057 19.1647 27.1153 19.7021 27.4148C20.1553 27.667 20.6249 27.9268 20.9161 27.8611C21.2306 27.7928 21.5478 27.3389 21.8554 26.9041C22.202 26.4119 22.5608 25.9026 23.0858 25.6504C23.6184 25.3934 24.2479 25.4296 24.8563 25.4645C25.3813 25.4952 25.9241 25.526 26.1668 25.3325C26.4095 25.1391 26.5018 24.5984 26.5893 24.0775C26.6897 23.4779 26.7943 22.8579 27.1601 22.3979C27.5258 21.9378 28.1048 21.7033 28.664 21.4736C29.1548 21.2727 29.662 21.0635 29.8001 20.7791C29.9382 20.4947 29.7816 19.9841 29.636 19.4803C29.4658 18.8931 29.2895 18.2847 29.4214 17.7029C29.5492 17.1424 29.9635 16.6817 30.3641 16.2366C30.7223 15.8374 31.0935 15.4252 31.0935 15.0957C31.0935 14.7662 30.7223 14.354 30.3641 13.9548C29.9635 13.5098 29.5492 13.049 29.4214 12.4885C29.2895 11.9074 29.4658 11.2997 29.636 10.7111C29.7816 10.2087 29.9327 9.68575 29.8001 9.41232C29.6634 9.12657 29.1548 8.91876 28.664 8.71778C28.1034 8.4881 27.5237 8.25021 27.1601 7.79288C26.7964 7.33556 26.6815 6.71896 26.5838 6.11944C26.4963 5.59855 26.4061 5.05987 26.1613 4.86437C25.9166 4.66886 25.3759 4.70167 24.8509 4.73243C24.2425 4.7673 23.6129 4.80079 23.0804 4.5465C22.5581 4.29425 22.1992 3.78497 21.8499 3.29278C21.5423 2.85665 21.2251 2.40411 20.9106 2.33575C20.6194 2.26739 20.1498 2.52989 19.6966 2.78214C19.1572 3.08155 18.6028 3.39122 17.9972 3.39122C17.3915 3.39122 16.8351 3.08155 16.2978 2.78214C15.8445 2.52989 15.3749 2.27013 15.0837 2.33575C14.7692 2.40753 14.4521 2.85802 14.1444 3.29278C13.7979 3.78497 13.439 4.29425 12.914 4.5465C12.3814 4.80284 11.7519 4.7673 11.1435 4.73175C10.6185 4.70167 10.0757 4.67091 9.83301 4.86437C9.59033 5.05782 9.49805 5.59855 9.41055 6.11944C9.31006 6.71896 9.20547 7.33898 8.83975 7.79835C8.47402 8.25773 7.89502 8.49288 7.33584 8.72325C6.84502 8.92423 6.33779 9.13341 6.19971 9.41778C6.06709 9.69122 6.21816 10.2128 6.36377 10.7166C6.53398 11.3038 6.71035 11.9115 6.57842 12.494C6.45059 13.0545 6.03633 13.5152 5.63574 13.9603C5.28506 14.3554 4.91045 14.769 4.91045 15.0984C4.91045 15.4279 5.28506 15.8401 5.63984 16.2394C6.04043 16.6844 6.45469 17.1451 6.58389 17.705C6.71582 18.2854 6.53945 18.8931 6.36924 19.4823C6.22363 19.9848 6.07256 20.5043 6.20518 20.7812C6.33779 21.058 6.85049 21.2747 7.34131 21.4757C7.90186 21.7054 8.48154 21.9433 8.84521 22.3999C9.20889 22.8566 9.31621 23.48 9.4167 24.0795C9.5042 24.6004 9.59443 25.1391 9.83916 25.3346C10.0839 25.5301 10.6246 25.4966 11.1496 25.4665C11.3608 25.4528 11.5741 25.4405 11.7881 25.4405Z" fill="#3E5D74"/>
+                  <path d="M18 25.7607C12.1211 25.7607 7.33594 20.9756 7.33594 15.0967C7.33594 9.21777 12.1211 4.43262 18 4.43262C23.8789 4.43262 28.6641 9.21777 28.6641 15.0967C28.6641 20.9756 23.8789 25.7607 18 25.7607ZM18 5.53047C12.724 5.53047 8.42969 9.82275 8.42969 15.1008C8.42969 20.3788 12.722 24.6711 18 24.6711C23.278 24.6711 27.5703 20.3788 27.5703 15.1008C27.5703 9.82275 23.276 5.53047 18 5.53047Z" fill="#3E5D74"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="col-lg-6">
+          © 2025 Alteco. All rights reserved
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div class="call-me" data-modal="#call-me">
     <svg class="icon">

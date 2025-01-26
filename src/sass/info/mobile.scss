@@ -142,10 +142,14 @@
     h3 {
       font-size: 24px;
     }
+    padding: 32px;
+
   }
 
   .get-info-form-btn {
     max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 16px;
   }
 
   .schedule {
@@ -254,6 +258,87 @@
   .map {
     &-frame {
       margin-top: 24px;
+    }
+  }
+
+  .order-first {
+    order: -1;
+  }
+
+  .assistance {
+    &-manager {
+      flex-direction: column;
+      padding: 40px 16px;
+      margin: 0 -12px;
+
+      &-content {
+        text-align: center;
+        max-width: 100%;
+
+        &-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+      }
+
+      &-mob {
+        display: flex;
+        gap: 24px;
+      }
+
+      &-photo {
+        img {
+          width: 112px;
+          height: 125px;
+        }
+      }
+
+      &-button {
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+
+        .btn-regular {
+          max-width: 100%;
+        }
+      }
+
+      &-badge {
+        display: inline-block;
+        width: fit-content;
+      }
+    }
+  }
+
+  .contacts {
+    min-height: auto;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+    &::before {
+      height: auto;
+      bottom: 0;
+      right: -145px;
+      opacity: 0.4;
+    }
+
+    &-item {
+      max-width: 100%;
+      margin-top: 24px;
+      padding: 24px;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
     }
   }
 }

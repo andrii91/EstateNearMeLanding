@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+  $(window).scroll(function () {
+    return $('.navigation').toggleClass("fixed", $(window).scrollTop() > 0);
+  });
+
   function isMobile() {
     // Перевірка ширини екрана
     var windowWidth = $(window).width();
@@ -201,45 +205,22 @@ $( document ).ready(function() {
       $('.get-info-form-btn').attr('disabled', true)
     }
   })
-  
-
-  // $('input[name="phone"]').inputmask("{1,15}");
 
 
-  // $(window).scroll(function () {
-  //   var $sections = $('.roadmap-list .large-title');
+  const ofertaValue21 = $('#oferta_2-1');
+  if(ofertaValue21.is(':checked')) {
+    $('.get-info-form-btn').removeAttr('disabled')
+  }else{
+    $('.get-info-form-btn').attr('disabled', true)
+  }
 
-  //   $sections.each(function (i, el) {
-  //     const top = $(el).offset().top - 500;
-  //     const bottom = top + $(el).height() + $(window).height()*3;
-  //     const scroll = $(window).scrollTop();
-  //     let heightBefore = $('.item'+i).height() - 10;
-
-  //     const topMenu = $(el).offset().top - 70;
-  //     const bottomMunu = topMenu + $(el).height() + $(window).height()/3;
-  //     //    var id = $(el).attr('id');
-  //     if (scroll > top && scroll < bottom && $(el).hasClass('large-title')) {
-  //       $(el).addClass('active');
-  //       $(el).find('.before').height(heightBefore);
-
-  //       // $(el).find('.before').animate({
-  //       //   opacity: 1,
-  //       //   height: heightBefore
-  //       // });
-
-  //     } else {
-  //       $(el).removeClass('active');
-  //     }
-
-  //     if (scroll > topMenu && scroll < bottomMunu) {
-  //       // $('.nav-btn').addClass('dark-mode');
-  //       // $('.logo').addClass('dark-mode');
-
-  //     } else {}
-  //   })
-
-
-  // });
+  ofertaValue21.change(function(){
+    if(ofertaValue21.is(':checked')) {
+      $('.get-info-form-btn').removeAttr('disabled')
+    }else{
+      $('.get-info-form-btn').attr('disabled', true)
+    }
+  })
 
 
   $('[data-modal]').click(function (e) {
@@ -300,6 +281,13 @@ $( document ).ready(function() {
     $(this).toggleClass('active');
     $('.navigation-menu, .mobile-phone').toggleClass('show');
   })
+
+  if(isMobile()) {
+   $('.navigation-menu li a').click(function(){
+    $('.mobile-btn').removeClass('active');
+    $('.navigation-menu, .mobile-phone').removeClass('show');
+   })
+  }
 
   $('.gallery-slider').slick({
     arrows: true,
@@ -395,6 +383,34 @@ $( document ).ready(function() {
     L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
   
   }
+
+
+  $('.scroll').click(function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+
+    $('body,html').animate({
+      scrollTop: top - 50
+    }, 500);
+
+  });
+
+
+  const ofertaValue3 = $('#oferta_3');
+  if(ofertaValue3.is(':checked')) {
+    $('.contacts-submit').removeAttr('disabled')
+  }else{
+    $('.contacts-submit').attr('disabled', true)
+  }
+
+  ofertaValue3.change(function(){
+    if(ofertaValue3.is(':checked')) {
+      $('.contacts-submit').removeAttr('disabled')
+    }else{
+      $('.contacts-submit').attr('disabled', true)
+    }
+  })
 }) 
 
 
