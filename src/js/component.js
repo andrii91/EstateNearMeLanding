@@ -73,28 +73,6 @@ $( document ).ready(function() {
     }
   });
 
-  $('.get-price-form').on('submit', function (e) {
-    e.preventDefault();
-    var $form = $(this);
-    $form.find('.submit').addClass('inactive');
-    $form.find('.submit').prop('disabled', true);
-
-
-    setTimeout(function () {
-      alert('Success');
-      
-      $form.find('.submit').removeClass('inactive');
-      $form.find('.submit').prop('disabled', false);
-      $form[0].reset();
-
-      $('.tab-item').removeClass('active')
-      $('#slide-5').addClass('active');
-
-      
-    }, 1000);
-
-  });
-
   const ofertaValue = $('#oferta');
   if(ofertaValue.is(':checked')) {
     $('.get-price-form-submit').removeAttr('disabled')
@@ -110,42 +88,6 @@ $( document ).ready(function() {
     }
   })
 
-
-  $('#call-me-form').on('submit', function (e) {
-    e.preventDefault();
-    var $form = $(this);
-    $form.find('.submit').addClass('inactive');
-    $form.find('.submit').prop('disabled', true);
-
-
-    setTimeout(function () {
-      alert('Success');
-      
-      $form.find('.submit').removeClass('inactive');
-      $form.find('.submit').prop('disabled', false);
-      $form[0].reset();
-      
-    }, 1000);
-
-  });
-
-  $('.get-info-form').on('submit', function (e) {
-    e.preventDefault();
-    var $form = $(this);
-    $form.find('.submit').addClass('inactive');
-    $form.find('.submit').prop('disabled', true);
-
-
-    setTimeout(function () {
-      alert('Success');
-      
-      $form.find('.submit').removeClass('inactive');
-      $form.find('.submit').prop('disabled', false);
-      $form[0].reset();
-      
-    }, 1000);
-
-  });
 
   function validateEmail(email) {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -206,7 +148,6 @@ $( document ).ready(function() {
     }
   })
 
-
   const ofertaValue21 = $('#oferta_2-1');
   if(ofertaValue21.is(':checked')) {
     $('.get-info-form-btn').removeAttr('disabled')
@@ -221,8 +162,7 @@ $( document ).ready(function() {
       $('.get-info-form-btn').attr('disabled', true)
     }
   })
-
-
+  
   $('[data-modal]').click(function (e) {
     e.preventDefault();
 
@@ -371,7 +311,7 @@ $( document ).ready(function() {
 
 
   if($('div').hasClass('map-frame')) {
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([38.085321, -0.653573], 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -380,7 +320,7 @@ $( document ).ready(function() {
         iconSize:     [36, 36], // size of the icon
     });
   
-    L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
+    L.marker([38.085321, -0.653573], {icon: greenIcon}).addTo(map);
   
   }
 
@@ -411,6 +351,80 @@ $( document ).ready(function() {
       $('.contacts-submit').attr('disabled', true)
     }
   })
+
+
+  const ofertaValue4 = $('#oferta_4');
+  if(ofertaValue4.is(':checked')) {
+    $('.consultation-submit').removeAttr('disabled')
+  }else{
+    $('.consultation-submit').attr('disabled', true)
+  }
+
+  ofertaValue4.change(function(){
+    if(ofertaValue4.is(':checked')) {
+      $('.consultation-submit').removeAttr('disabled')
+    }else{
+      $('.consultation-submit').attr('disabled', true)
+    }
+  })
+
+
+  $('.get-price-form').on('submit', function (e) {
+    e.preventDefault();
+    var $form = $(this);
+    $form.find('.submit').addClass('inactive');
+    $form.find('.submit').prop('disabled', true);
+
+
+    setTimeout(function () {
+      
+      $form.find('.submit').removeClass('inactive');
+      $form.find('.submit').prop('disabled', false);
+      $form[0].reset();
+
+      $('.tab-item').removeClass('active')
+      $('#slide-5').addClass('active');
+
+      
+    }, 1000);
+
+  });
+
+
+  $('#call-me-form, #consultation-form').on('submit', function (e) {
+    e.preventDefault();
+    var $form = $(this);
+    $form.find('.submit').addClass('inactive');
+    $form.find('.submit').prop('disabled', true);
+
+
+    setTimeout(function () {
+      
+      $form.find('.submit').removeClass('inactive');
+      $form.find('.submit').prop('disabled', false);
+      $form[0].reset();
+      
+    }, 1000);
+
+  });
+
+  $('.get-info-form').on('submit', function (e) {
+    e.preventDefault();
+    var $form = $(this);
+    $form.find('.submit').addClass('inactive');
+    $form.find('.submit').prop('disabled', true);
+
+
+    setTimeout(function () {
+      
+      $form.find('.submit').removeClass('inactive');
+      $form.find('.submit').prop('disabled', false);
+      $form[0].reset();
+      
+    }, 1000);
+
+  });
+
 }) 
 
 

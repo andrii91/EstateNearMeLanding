@@ -13,11 +13,14 @@
   }
 
   .materials {
-
     &-list {
       li {
         max-width: calc(50% - 8px);
       }
     }
+  }
+
+  .section {
+    padding: 80px 0;
   }
 }

@@ -419,7 +419,7 @@
         
         <div class="btn-group">
           <a href="#get-price" data-modal="#get-price" class="btn-regular btn-white">Узнать цену</a>
-          <a href="#" class="btn-regular">Посмотреть планировки</a>
+          <a href="#" class="btn-regular" data-modal="#consultation">Посмотреть планировки</a>
         </div>
       </div>
     </div>
@@ -520,7 +520,7 @@
               </div>
             </div>
 
-            <a href="#" class="apartment-link">
+            <a href="#" class="apartment-link" data-modal="#consultation">
               Больше информации об объектах
               <svg class="icon"><use xlink:href="#link-icon"></use></svg>
             </a>
@@ -702,7 +702,7 @@
           </table>
         </div>
 
-        <a href="#" class="apartment-link">
+        <a href="#" class="apartment-link" data-modal="#consultation">
           Помощь с выбором объекта
           <svg class="icon"><use xlink:href="#link-icon"></use></svg>
         </a>
@@ -1485,7 +1485,7 @@
               </svg>
               +34 654 359 318
             </a>
-            <a href="#" class="btn-regular order-first">Связаться</a>
+            <a href="#" class="btn-regular order-first" data-modal="#consultation">Связаться</a>
           </div>
         </div>
 
@@ -1809,6 +1809,273 @@
     <svg class="icon">
       <use xlink:href="#phone-icon"></use>
     </svg>
+  </div>
+  
+  <div class="modal" id="consultation">
+    <div class="modal-dialog">
+      <div class="close">
+        <svg class="icon">
+          <use xlink:href="#close"></use>
+        </svg>
+      </div>
+      <div class="modal-container">
+        <img class="consultation-img-mob xl-none" 
+          src="images/consultation-modal-image-mob.webp" 
+          alt="Consultation Image" 
+        />
+        <div class="consultation-item">
+          <h3>Оставьте заявку на бесплатную консультацию</h3>
+          <p>На бесплатной консультации вы получите:</p>
+          <ul>
+            <li>Информацию об объектах, инфраструктуре и характеристиках</li>
+            <li>Детали о ценах и условиях покупки</li>
+            <li>Советы по выбору подходящего варианта</li>
+          </ul>
+
+          <form id="consultation-form" action="#">
+            <div class="row">
+              <div class="col-lg-6 label">
+                <input type="text" class="custom-input" value="" name="name" placeholder="Ваше имя *" required="">
+              </div>
+              <div class="col-lg-6 label">
+                <input type="email" class="custom-input" value="" name="email" placeholder="Email *" required="">
+              </div>
+              <div class="col-12 label">
+                <div class="input-phone">
+                  <select class="custom-select" name="phone_code">
+                    <option value="us">+1 (US)</option>
+                    <option value="ru">+7 (RU)</option>
+                    <option value="eg">+20 (EG)</option>
+                    <option value="za">+27 (ZA)</option>
+                    <option value="gr">+30 (GR)</option>
+                    <option value="nl">+31 (NL)</option>
+                    <option value="be">+32 (BE)</option>
+                    <option value="fr">+33 (FR)</option>
+                    <option value="es">+34 (ES)</option>
+                    <option value="hu">+36 (HU)</option>
+                    <option value="it">+39 (IT)</option>
+                    <option value="ro">+40 (RO)</option>
+                    <option value="ch">+41 (CH)</option>
+                    <option value="at">+43 (AT)</option>
+                    <option value="gb">+44 (GB)</option>
+                    <option value="dk">+45 (DK)</option>
+                    <option value="se">+46 (SE)</option>
+                    <option value="no">+47 (NO)</option>
+                    <option value="pl">+48 (PL)</option>
+                    <option value="de">+49 (DE)</option>
+                    <option value="pe">+51 (PE)</option>
+                    <option value="mx">+52 (MX)</option>
+                    <option value="cu">+53 (CU)</option>
+                    <option value="ar">+54 (AR)</option>
+                    <option value="br">+55 (BR)</option>
+                    <option value="cl">+56 (CL)</option>
+                    <option value="co">+57 (CO)</option>
+                    <option value="ve">+58 (VE)</option>
+                    <option value="my">+60 (MY)</option>
+                    <option value="au">+61 (AU)</option>
+                    <option value="id">+62 (ID)</option>
+                    <option value="ph">+63 (PH)</option>
+                    <option value="nz">+64 (NZ)</option>
+                    <option value="sg">+65 (SG)</option>
+                    <option value="th">+66 (TH)</option>
+                    <option value="jp">+81 (JP)</option>
+                    <option value="kr">+82 (KR)</option>
+                    <option value="vn">+84 (VN)</option>
+                    <option value="cn">+86 (CN)</option>
+                    <option value="tr">+90 (TR)</option>
+                    <option value="in">+91 (IN)</option>
+                    <option value="pk">+92 (PK)</option>
+                    <option value="af">+93 (AF)</option>
+                    <option value="lk">+94 (LK)</option>
+                    <option value="mm">+95 (MM)</option>
+                    <option value="ir">+98 (IR)</option>
+                    <option value="ss">+211 (SS)</option>
+                    <option value="ma">+212 (MA)</option>
+                    <option value="dz">+213 (DZ)</option>
+                    <option value="tn">+216 (TN)</option>
+                    <option value="ly">+218 (LY)</option>
+                    <option value="gm">+220 (GM)</option>
+                    <option value="sn">+221 (SN)</option>
+                    <option value="mr">+222 (MR)</option>
+                    <option value="ml">+223 (ML)</option>
+                    <option value="gn">+224 (GN)</option>
+                    <option value="ci">+225 (CI)</option>
+                    <option value="bf">+226 (BF)</option>
+                    <option value="ne">+227 (NE)</option>
+                    <option value="tg">+228 (TG)</option>
+                    <option value="bj">+229 (BJ)</option>
+                    <option value="mu">+230 (MU)</option>
+                    <option value="lr">+231 (LR)</option>
+                    <option value="sl">+232 (SL)</option>
+                    <option value="gh">+233 (GH)</option>
+                    <option value="ng">+234 (NG)</option>
+                    <option value="td">+235 (TD)</option>
+                    <option value="cf">+236 (CF)</option>
+                    <option value="cm">+237 (CM)</option>
+                    <option value="cv">+238 (CV)</option>
+                    <option value="st">+239 (ST)</option>
+                    <option value="gq">+240 (GQ)</option>
+                    <option value="ga">+241 (GA)</option>
+                    <option value="cg">+242 (CG)</option>
+                    <option value="cd">+243 (CD)</option>
+                    <option value="ao">+244 (AO)</option>
+                    <option value="gw">+245 (GW)</option>
+                    <option value="io">+246 (IO)</option>
+                    <option value="ac">+247 (AC)</option>
+                    <option value="sc">+248 (SC)</option>
+                    <option value="sd">+249 (SD)</option>
+                    <option value="rw">+250 (RW)</option>
+                    <option value="et">+251 (ET)</option>
+                    <option value="so">+252 (SO)</option>
+                    <option value="dj">+253 (DJ)</option>
+                    <option value="ke">+254 (KE)</option>
+                    <option value="tz">+255 (TZ)</option>
+                    <option value="ug">+256 (UG)</option>
+                    <option value="bi">+257 (BI)</option>
+                    <option value="mz">+258 (MZ)</option>
+                    <option value="zm">+260 (ZM)</option>
+                    <option value="mg">+261 (MG)</option>
+                    <option value="re">+262 (RE)</option>
+                    <option value="zw">+263 (ZW)</option>
+                    <option value="na">+264 (NA)</option>
+                    <option value="mw">+265 (MW)</option>
+                    <option value="ls">+266 (LS)</option>
+                    <option value="bw">+267 (BW)</option>
+                    <option value="sz">+268 (SZ)</option>
+                    <option value="km">+269 (KM)</option>
+                    <option value="sh">+290 (SH)</option>
+                    <option value="er">+291 (ER)</option>
+                    <option value="aw">+297 (AW)</option>
+                    <option value="fo">+298 (FO)</option>
+                    <option value="gl">+299 (GL)</option>
+                    <option value="gi">+350 (GI)</option>
+                    <option value="pt">+351 (PT)</option>
+                    <option value="lu">+352 (LU)</option>
+                    <option value="ie">+353 (IE)</option>
+                    <option value="is">+354 (IS)</option>
+                    <option value="al">+355 (AL)</option>
+                    <option value="mt">+356 (MT)</option>
+                    <option value="cy">+357 (CY)</option>
+                    <option value="fi">+358 (FI)</option>
+                    <option value="bg">+359 (BG)</option>
+                    <option value="lt">+370 (LT)</option>
+                    <option value="lv">+371 (LV)</option>
+                    <option value="ee">+372 (EE)</option>
+                    <option value="md">+373 (MD)</option>
+                    <option value="am">+374 (AM)</option>
+                    <option value="by">+375 (BY)</option>
+                    <option value="ad">+376 (AD)</option>
+                    <option value="mc">+377 (MC)</option>
+                    <option value="sm">+378 (SM)</option>
+                    <option value="ua">+380 (UA)</option>
+                    <option value="rs">+381 (RS)</option>
+                    <option value="me">+382 (ME)</option>
+                    <option value="xk">+383 (XK)</option>
+                    <option value="hr">+385 (HR)</option>
+                    <option value="si">+386 (SI)</option>
+                    <option value="ba">+387 (BA)</option>
+                    <option value="mk">+389 (MK)</option>
+                    <option value="cz">+420 (CZ)</option>
+                    <option value="sk">+421 (SK)</option>
+                    <option value="li">+423 (LI)</option>
+                    <option value="fk">+500 (FK)</option>
+                    <option value="bz">+501 (BZ)</option>
+                    <option value="gt">+502 (GT)</option>
+                    <option value="sv">+503 (SV)</option>
+                    <option value="hn">+504 (HN)</option>
+                    <option value="ni">+505 (NI)</option>
+                    <option value="cr">+506 (CR)</option>
+                    <option value="pa">+507 (PA)</option>
+                    <option value="pm">+508 (PM)</option>
+                    <option value="ht">+509 (HT)</option>
+                    <option value="gp">+590 (GP)</option>
+                    <option value="bo">+591 (BO)</option>
+                    <option value="gy">+592 (GY)</option>
+                    <option value="ec">+593 (EC)</option>
+                    <option value="gf">+594 (GF)</option>
+                    <option value="py">+595 (PY)</option>
+                    <option value="mq">+596 (MQ)</option>
+                    <option value="sr">+597 (SR)</option>
+                    <option value="uy">+598 (UY)</option>
+                    <option value="cw">+599 (CW)</option>
+                    <option value="tl">+670 (TL)</option>
+                    <option value="nf">+672 (NF)</option>
+                    <option value="bn">+673 (BN)</option>
+                    <option value="nr">+674 (NR)</option>
+                    <option value="pg">+675 (PG)</option>
+                    <option value="to">+676 (TO)</option>
+                    <option value="sb">+677 (SB)</option>
+                    <option value="vu">+678 (VU)</option>
+                    <option value="fj">+679 (FJ)</option>
+                    <option value="pw">+680 (PW)</option>
+                    <option value="wf">+681 (WF)</option>
+                    <option value="ck">+682 (CK)</option>
+                    <option value="nu">+683 (NU)</option>
+                    <option value="ws">+685 (WS)</option>
+                    <option value="ki">+686 (KI)</option>
+                    <option value="nc">+687 (NC)</option>
+                    <option value="tv">+688 (TV)</option>
+                    <option value="pf">+689 (PF)</option>
+                    <option value="tk">+690 (TK)</option>
+                    <option value="fm">+691 (FM)</option>
+                    <option value="mh">+692 (MH)</option>
+                    <option value="001">+979 (001)</option>
+                    <option value="kp">+850 (KP)</option>
+                    <option value="hk">+852 (HK)</option>
+                    <option value="mo">+853 (MO)</option>
+                    <option value="kh">+855 (KH)</option>
+                    <option value="la">+856 (LA)</option>
+                    <option value="bd">+880 (BD)</option>
+                    <option value="tw">+886 (TW)</option>
+                    <option value="mv">+960 (MV)</option>
+                    <option value="lb">+961 (LB)</option>
+                    <option value="jo">+962 (JO)</option>
+                    <option value="sy">+963 (SY)</option>
+                    <option value="iq">+964 (IQ)</option>
+                    <option value="kw">+965 (KW)</option>
+                    <option value="sa">+966 (SA)</option>
+                    <option value="ye">+967 (YE)</option>
+                    <option value="om">+968 (OM)</option>
+                    <option value="ps">+970 (PS)</option>
+                    <option value="ae">+971 (AE)</option>
+                    <option value="il">+972 (IL)</option>
+                    <option value="bh">+973 (BH)</option>
+                    <option value="qa">+974 (QA)</option>
+                    <option value="bt">+975 (BT)</option>
+                    <option value="mn">+976 (MN)</option>
+                    <option value="np">+977 (NP)</option>
+                    <option value="tj">+992 (TJ)</option>
+                    <option value="tm">+993 (TM)</option>
+                    <option value="az">+994 (AZ)</option>
+                    <option value="ge">+995 (GE)</option>
+                    <option value="kg">+996 (KG)</option>
+                    <option value="uz">+998 (UZ)</option>
+                  </select>
+                  <input type="tel" name="phone" class="custom-input" placeholder="00000000" required="">
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="oferta_4" class="custom-checkbox">
+                  <input id="oferta_4" type="checkbox" name="oferta">
+                  <span>Я согласен с <a href="#">условиями обработки персональных данных</a></span>
+                </label>
+
+                <button type="submit" class="consultation-submit submit btn-regular" disabled="disabled">
+                  Отправить 
+                </button>
+              </div>
+
+            </div>
+            
+          </form>
+        </div>
+        <img class="consultation-img xs-none" 
+          src="images/consultation-modal-image.webp" 
+          alt="Consultation Image" 
+        />
+
+      </div>
+    </div>
   </div>
 
   <div class="modal" id="call-me">
